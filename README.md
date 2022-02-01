@@ -60,7 +60,6 @@ If your version of Python is missing Pip you should see :
 
 ### Install django:
 - (virtual-name)...\> py -m pip install Django
-- after installation
 
 ### show the Packages that installed in your invironment:
 - (virtual-name)...\>pip list
@@ -77,7 +76,7 @@ example:
 - (virtual-name)...\>python manage.py runserver
 - open your browser go to http://127.0.0.1:8000/
 - now you can use the server 
-- 
+
 ### Admin panel
 - Admin panel is accessible on admin.html page (e.g. http://127.0.0.1:8000/admin)
 
