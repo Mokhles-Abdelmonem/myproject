@@ -79,7 +79,7 @@ example:
 - now you can use the server 
 - 
 ### Admin panel
-- Admin panel is accessible on admin.html page (e.g. http://localhost:5000/admin.html)
+- Admin panel is accessible on admin.html page (e.g. http://127.0.0.1:8000/admin)
 
 ## Asking questions
 If you have any questions, feel free to ask :
