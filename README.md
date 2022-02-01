@@ -1,10 +1,45 @@
 # myproject
-download python from :https://www.python.org/downloads/
-install python  Make sure you select the Install launcher for all users and Add Python to PATH checkboxes.
-Verify Python Was Installed On Windows  py opening command prompt and type 
-...\>python
-you should see python version, date and other informations
+the project is a basic web forms 
 
+## Features
+- register
+- you can search in profiles
+- user can login with username or password
+- change profile settings
+- reset password by mail 
+
+
+### Server-side
+
+Python 3.6 or higher with the following Packages:
+Package             Version
+------------------- -------
+asgiref             3.5.0
+beautifulsoup4      4.10.0
+Django              4.0.1
+django-bootstrap4   21.2
+django-crispy-forms 1.14.0
+Pillow              9.0.0
+pip                 21.3.1
+setuptools          60.2.0
+soupsieve           2.3.1
+sqlparse            0.4.2
+tzdata              2021.5
+wheel               0.37.1
+
+OS support:
+- Windows (main). Tested and working on Windows 10
+
+
+## Installation
+
+- download python from :https://www.python.org/downloads/
+- install python  Make sure you select the Install launcher for all users and Add Python to PATH checkboxes.
+- Verify Python Was Installed On Windows  py opening command prompt and type 
+- ...\>python
+- you should see python version, date and other informations
+
+## Setup and run
 Verify Pip Was Installed :
 Enter ...\>pip -V in the command prompt.
 If Pip was installed successfully, you should see pip virsion ,path to folder location and python version 
@@ -33,20 +68,6 @@ after installation
 show the Packages that installed in your invironment
 (virtual-name)...\>pip list
 if any of the following Packages not installed on your virsion , make sure to install it :
-Package             Version
-------------------- -------
-asgiref             3.5.0
-beautifulsoup4      4.10.0
-Django              4.0.1
-django-bootstrap4   21.2
-django-crispy-forms 1.14.0
-Pillow              9.0.0
-pip                 21.3.1
-setuptools          60.2.0
-soupsieve           2.3.1
-sqlparse            0.4.2
-tzdata              2021.5
-wheel               0.37.1
 
 by the following command :
 (virtual-name)...\>pip install the-name-of-the-Package
