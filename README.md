@@ -2,7 +2,7 @@
 download python from :https://www.python.org/downloads/
 install python  Make sure you select the Install launcher for all users and Add Python to PATH checkboxes.
 Verify Python Was Installed On Windows  py opening command prompt and type 
-...\>python
+...\>python.
 you should see python version, date and other informations
 
 Verify Pip Was Installed :
