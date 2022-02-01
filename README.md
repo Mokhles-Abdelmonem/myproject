@@ -64,7 +64,7 @@ If your version of Python is missing Pip you should see :
 
 ### show the Packages that installed in your invironment:
 - (virtual-name)...\>pip list
-- if any of the following Packages not installed on your virsion , make sure to install it :
+- if any of the Packages that referred to earlier not installed on your virsion , make sure to install it :
 
 ### by the following command :
 - (virtual-name)...\>pip install the-name-of-the-Package
