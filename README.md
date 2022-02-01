@@ -69,10 +69,7 @@ If your version of Python is missing Pip you should see :
 - (virtual-name)...\>pip install the-name-of-the-Package
 example: 
 - (virtual-name)...\>pip install Pillow
-### run server
-- change directory to the project7
-- (virtual-name)...\>cd project7
-- now you are ready to run the server 
+### run server 
 - (virtual-name)...\>python manage.py runserver
 - open your browser go to http://127.0.0.1:8000/
 - now you can use the server 
