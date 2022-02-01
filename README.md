@@ -3,8 +3,8 @@ the project is a basic web forms
 
 ## Features
 - register
-- you can search in profiles
 - user can login with username or password
+- you can search in profiles
 - change profile settings
 - reset password by mail 
 
