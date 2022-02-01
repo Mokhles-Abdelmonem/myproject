@@ -1,0 +1,36 @@
+
+<div class="container">
+<div class="signup">
+
+<div class="col-md-9" >
+    <form method="POST" enctype="multipart/form-data">
+        {% if messages %}
+    
+        {% for message in messages %}
+            <div class="alert alert-info">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% endif %}
+        <h4 class="auth-header"> ارسال ايميل </h4>
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    Email : {{form.email}}
+                </div>
+ 
+                <div class="buttons-w"><button type="submit" class="btn btn-success">Send</button></div>
+            </div>
+            </div>
+            </form>
+            <div class="container signin">
+                <p> <a href="/login/">login</a>.</p>
+            </div>
+            <div class="container register">
+                <p> <a href="/register/">register</a>.</p>
+            </div>
+</div>
+</div>
+</div>
+</div>

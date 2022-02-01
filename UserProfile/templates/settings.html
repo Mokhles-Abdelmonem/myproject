@@ -1,0 +1,54 @@
+
+<div class="container">
+    <div class="signup">
+
+    <div class="col-md-9" >
+        <form method="POST" enctype="multipart/form-data">
+            <h4 class="auth-header">
+<div class="container">
+    <div class="signup">
+
+    <div class="col-md-9" >
+        <form method="POST" enctype="multipart/form-data">
+            <h4 class="auth-header">Settings </h4>
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        first name : {{user_form.first_name}}
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        last name : {{user_form.last_name}}
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    email : {{user_form.email}}
+    
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        password : {{user_form.password}}
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-w"><button type="submit" class="btn btn-success">Submit change</button></div>
+            </div>
+            {% if messages %}
+
+                {% for message in messages %}
+                    <div class="alert alert-info">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            </div>
+        </form>
+        <div class="container settings">
+            <p>back home<a href="/home/"> <br> home</a>.</p>
+            <a href="/logout/" class="btn btn-danger">Logout</a>
+          </div>
+    </div>
+    </div>

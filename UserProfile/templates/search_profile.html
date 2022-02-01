@@ -1,0 +1,50 @@
+<div class="container settings">
+    <p><a href="/home/"> <br> home</a></p>
+    <a href="/logout/" class="btn btn-danger">Logout</a>
+  </div>
+{% if searched %}
+<h1>You Searched For {{ searched }}</h1>
+<br/>
+
+    {% if profile %}
+
+    {% for prof in profile %}
+        
+                <div class="card">
+        <div class="card-header">
+        profile
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">{{ prof }}</h5>
+        <p class="card-text">
+            <ul>
+        {% if prof.first_name %}
+            <li>first name : {{ prof.first_name }}</li>
+        {% endif %}
+
+        {% if prof.last_name %}
+            <li>last name : {{ prof.last_name }}</li>
+        {% endif %}
+
+        {% if prof.email_address %}
+            <li>email address : {{ prof.email_address }}</li>
+    
+    {% endif %}
+
+    </ul>
+
+    </p>
+    </div>
+    </div>
+<br/>
+
+    {% endfor %}
+
+    {% else %}
+    <h1>No Results</h1>
+    {% endif %}
+{% else %}
+    <h1>Hey! You Forgot To Search For A profile...</h1>
+{% endif %}
+
+

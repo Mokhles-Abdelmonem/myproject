@@ -1,0 +1,59 @@
+</div>
+{% if messages %}
+
+    {% for message in messages %}
+        <div class="alert alert-info">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+</div>
+<div class="container">
+    <div class="signup">
+
+    <div class="col-md-9" >
+        <form method="POST" enctype="multipart/form-data">
+            <h4 class="auth-header">أنشاء حساب جديد</h4>
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        username : {{form.username}}
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        first name : {{form.first_name}}
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        last name : {{form.last_name}}
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    email : {{form.email}}
+    
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        password : {{form.password1}}
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        confirm password : {{form.password2}}
+                    </div>
+            </div>
+            <div class="buttons-w"><button type="submit" class="btn btn-success">التسجيل</button></div>
+            <div class="container signin">
+                <p> have account ? <a href="/login/">login</a>.</p>
+            </div>
+
+        </form>
+
+    </div>
+    </div>
+</div>
+</div>
