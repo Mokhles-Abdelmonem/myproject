@@ -6,7 +6,7 @@ the project is a basic web forms
 - user can login with username or password
 - you can search in profiles
 - change profile settings
-- reset password by mail 
+- reset password by email 
 
 
 ### Server-side
@@ -39,7 +39,7 @@ OS support:
 - you should see python version, date and other informations
 
 ## Setup and run
-Verify Pip Was Installed :
+Verify pip Was Installed :
 Enter ...\>pip -V in the command prompt.
 If Pip was installed successfully, you should see pip virsion ,path to folder location and python version 
 If your version of Python is missing Pip you should see :
